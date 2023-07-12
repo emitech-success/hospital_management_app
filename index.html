@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+  <script src="https://kit.fontawesome.com/f2303b5593.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Hospital</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- nav section -->
+    <nav class="nav_wrapper">
+      <div class="logo">
+        <a href="#"><span>Hospital</span> Logo</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li>
+          <select name="" id="">
+            <option value="">Services</option>
+            <option value="">Services 1</option>
+            <option value="">Services 2</option>
+            <option value="">Services 3</option>
+          </select>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="buttons">
+        <button class="signin">Sign In</button>
+        <button class="signup" onclick="on()">Sign Up</button>
+      </div>
+      <div class="mobile_buttons">
+        <button class=" mobile_btn mobile_sign_in">Sign In</button>
+        <button class="mobile_btn mobile_sign_up">Sign Up</button>
+      </div>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero_wrapper">
+      <div class="hero_container">
+      <div class="hero_left">
+        <h1 class="hero_left_title">We care</h1>
+        <h1>about your health</h1>
+        <p>Good health is the state of mental, physical and social well being
+          and it does not just mean absence of diseases.</p>
+        <div class="book_appoint_container">
+          <div class="book_appoint">
+            <button>Book an appointment <span> ➡</span></button>
+          </div>
+          <div class="appoint_video_cont">
+            <button><span><i style="font-size:30px; color: rgba(66, 0, 255, 1);" class="fa">&#xf144;</i></span></button>
+            <span>Watch videos</span>
+          </div>
+        </div>
+        <p>Become member of our hospital community? <a href="">Sign up</a></p>
+       
+
+      </div>
+      <div class="hero_right">
+        <div class="box_wrapper" id="box_wrapper">
+          
+          <div class="box_container">
+
+          </div>
+        </div>
+        <div class="hero_people_wrapper">
+        <img id="hero_people" src="./assets/hero_people_2.png" alt="">
+      </div>
+        <!-- <img src="./assets/people_hero_pic.png" alt=""> -->
+        <!-- <img src="./assets/bg_circle_hero.png" alt=""> -->
+        <div class="hero_label contact_container">
+          <div>
+            <p>Contact no</p>
+            <p>+9715123871325</p>
+          </div>
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="hero_label doctor_search">
+          <i class="fa fa-search"></i>
+          <div>
+            <p>Well Qualified doctors</p>
+            <p>Treat with care</p>
+          </div>
+        </div>
+        <div class="hero_label online_appointment">
+          <i class="far fa-address-book"></i>
+          <div>
+            <p>Book an appointment</p>
+            <p>Online appointment</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- finding  a doctor -->
+    <div class="find_doctor">
+      <div class="find_doctor_container">
+      <form action="">
+        <div class="label_title_container"><label class="label_title">Find a doctor</label></div>
+        <div class="input_container">
+          <input type="text" placeholder="Name of Doctor">
+          <input type="text" placeholder="Speciality">
+          <label>Available</label>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <button type="submit" class="btn_search">Search</button>
+          <!-- <input type="submit" placeholder="Search"> -->
+        </div>
+      </form>
+    </div>
+    </div>
+    </section>
+
+    <!-- Medical services section -->
+    <section id="services">
+      <h2>Our Medical Services</h2>
+      <p>We are dedicated to serve you <br>
+        best medical services</p>
+      <div class="services_wrapper">
+
+        <!-- service card 1 -->
+        <div class="service_card">
+          <img src="./assets/labIcon.png" alt="lab icon">
+          <p>Well equipped lab</p>
+        </div>
+        <!-- service card 2 -->
+        <div class="service_card active">
+          <img src="./assets/ambulanceIcon.png" alt="lab icon">
+          <p>Emergency Ambulance</p>
+        </div>
+        <!-- service card 3 -->
+        <div class="service_card">
+          <img src="./assets/appointmentIcon.png" alt="lab icon">
+          <p>Online Appointment</p>
+        </div>
+        <!-- service card 4 -->
+        <div class="service_card">
+          <img src="./assets/callCenterIcon.png" alt="lab icon">
+          <p>Call center</p>
+        </div>
+      </div>
+    </section>
+    <!-- Doctors section -->
+    <section id="doctors">
+      <h2>Meet our Doctors</h2>
+      <p>Well qualified doctors are ready to serve you</p>
+      <div class="doctor_container">
+        <!-- doctor card 1 -->
+        <div class="doctor_card">
+          <div class="available_doc">
+            <button></button>
+            <span> Available</span>
+          </div>
+          <div class="doc_image_con">
+            <img src="./assets/robert_henry.png" alt="Dr. Robert Henry">
+          </div>
+          <h5>Dr. Robert Henry</h5>
+          <p>Cardiologist</p>
+          <div class="star_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span>(102)</span>
+          </div>
+          <button>Book Appointment</button>
+        </div>
+        <!-- doctor card 2 -->
+        <div class="doctor_card">
+          <div class="available_doc">
+            <button></button>
+            <span> Available</span>
+          </div>
+          <div class="doc_image_con">
+            <img src="./assets/harry_littleton.png" alt="Dr. Robert Henry">
+          </div>
+          <h5>Dr. Harry Littleton</h5>
+          <p>Neurologist</p>
+          <div class="star_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span>(97)</span>
+          </div>
+          <button>Book Appointment</button>
+        </div>
+        <!-- doctor card 3 -->
+        <div class="doctor_card">
+          <div class="available_doc">
+            <button></button>
+            <span> Available</span>
+          </div>
+          <div class="doc_image_con">
+            <img src="./assets/sharina_khan.png" alt="Dr. Robert Henry">
+          </div>
+          <h5>Dr. Sharina Khan</h5>
+          <p>Gynologist</p>
+          <div class="star_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span>(116)</span>
+          </div>
+          <button>Book Appointment</button>
+        </div>
+        <!-- doctor card 4 -->
+        <div class="doctor_card">
+          <div class="available_doc">
+            <button></button>
+            <span> Available</span>
+          </div>
+          <div class="doc_image_con">
+            <img src="./assets/sanjee_kapoor.png" alt="Dr. Robert Henry">
+          </div>
+          <h5>Dr. Sanjeev Kapoor</h5>
+          <p>Child Specialist</p>
+          <div class="star_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span>(72)</span>
+          </div>
+          <button>Book Appointment</button>
+        </div>
+      </div>
+      <div class="doc_see_more">
+        <button>See more</button>
+      </div>
+    </section>
+    <!-- testimonial section -->
+    <section id="testimonial">
+      <div class="testimonial_title">
+        <h2>Patients Testimonial</h2>
+        <p>Let’s see what our happy patients says</p>
+      </div>
+      <div class="testimonial_card_cont">
+        <!-- testimonial_card 1 -->
+        <div class="testimonial_card">
+          <div class="testimonial_pics_con">
+            <div class="testimonial_pics">
+              <img src="./assets/sara_ali_khan.png" alt="sara ali khan">
+            </div>
+          </div>
+          <div class="testimonial_text">
+            <h4>Sara Ali Khan</h4>
+            <p>Cardiologist Patient</p>
+            <div class="star_rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>Thanks for all the services,
+              no doubt it is the best hospital.
+            </p>
+          </div>
+        </div>
+        <!-- testimonial_card 2 -->
+        <div class="testimonial_card">
+          <div class="testimonial_pics_con">
+            <div class="testimonial_pics">
+              <img class="test_pics" src="./assets/sara_ali_khan.png" alt="sara ali khan">
+            </div>
+          </div>
+          <div class="testimonial_text">
+            <h4>Sara Ali Khan</h4>
+            <p>Cardiologist Patient</p>
+            <div class="star_rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>Thanks for all the services,
+              no doubt it is the best hospital.
+            </p>
+          </div>
+        </div>
+        <!-- testimonial_card 3 -->
+        <div class="testimonial_card">
+          <div class="testimonial_pics_con">
+            <div class="testimonial_pics">
+              <img class="test_pics" src="./assets/sara_ali_khan.png" alt="sara ali khan">
+            </div>
+          </div>
+          <div class="testimonial_text">
+            <h4>Sara Ali Khan</h4>
+            <p>Cardiologist Patient</p>
+            <div class="star_rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>Thanks for all the services,
+              no doubt it is the best hospital.
+            </p>
+          </div>
+
+        </div>
+        <button class="btn_arrow arrow_left"><i class="arrow left"></i></button>
+        <button class="btn_arrow arrow_right"><i class="arrow right"></i></button>
+
+      </div>
+
+
+    </section>
+    <!-- Latest article section -->
+    <section id="latest_article">
+      <div class="latest_article_title">
+        <h2>Our Latest Articles</h2>
+        <p>Written by our experts</p>
+
+      </div>
+      <div class="latest_article_card_cont">
+        <div class="article_left_card">
+          <div class="article_card_img_wrapper">
+            <div class="article_card_img_container">
+              <img src="./assets/article_pics_1.png" alt="article pics">
+            </div>
+            <div class="article_card_img_base"></div>
+          </div>
+          <div class="article_card_title">
+            <h4>Card title</h4>
+            <p>Card desription. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sit rhoncus imperdiet nisi.
+            </p>
+            <div class="see_more_btn">
+              <button><a href="">See more</a> </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="article_right_card_con">
+          <!-- right card 1 -->
+          <div class="article_right_card">
+            <div class="article_card_img_wrapper_right">
+              <div class="article_img_right_container">
+                <img src="./assets/article_pics_2.png" alt="article pics">
+              </div>
+              <div class="article_card_img_right_base"></div>
+            </div>
+            <div class="article_card_title_right">
+              <h4>Card title</h4>
+              <p>Card desription. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sit rhoncus imperdiet nisi.
+              </p>
+              <div class="see_more_btn">
+                <button><a href="">See more</a> </button>
+              </div>
+            </div>
+          </div>
+          <!-- right card 2 -->
+          <div class="article_right_card">
+            <div class="article_card_img_wrapper_right">
+              <div class="article_img_right_container">
+                <img src="./assets/article_pics_2.png" alt="article pics">
+              </div>
+              <div class="article_card_img_right_base"></div>
+            </div>
+            <div class="article_card_title_right">
+              <h4>Card title</h4>
+              <p>Card desription. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sit rhoncus imperdiet nisi.
+              </p>
+              <div class="see_more_btn">
+                <button><a href="">See more</a> </button>
+              </div>
+            </div>
+          </div>
+          <!-- right card ends -->
+        </div>
+    </section>
+    <section id="newsletter">
+      <div class="latest_article_title">
+        <h2>Subscribe To Our Newsletter</h2>
+        <p>Get latest news of our hospital</p>
+      </div>
+      <div class="newletter_input_con">
+        <div class="newsletter_input">
+          <label for="">For Newsletter</label>
+          <input type="text" placeholder="Enter your email here">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <footer id="footer">
+    <div class="footer_wrapper">
+      <div class="column1">
+        <h4><span>Hospital</span> logo</h4>
+        <p><strong>Card Title</strong></p>
+        <p>Card desription.
+          Lorem ipsum dolor sit <br> amet, consectetur adipiscing elit.
+          Sit <br> rhoncus imperdiet nisi.</p>
+      </div>
+      <div class="column2">
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+      </div>
+      <div class="column3">
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+        <p><strong>Card Title</strong></p>
+
+      </div>
+      <div class="column4">
+        <p><strong>Follow us</strong></p>
+        <div class="social_icons">
+          <a href="#"><i class='fab fa-facebook' style='font-size:24px'></i></a>
+          <a href="#"><i class='fab fa-twitter' style='font-size:24px'></i></a>
+          <a href="#"><i class='fab fa-instagram' style='font-size:24px'></i></a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Overlay section -->
+  <section id="overlay" class="modal">
+    <div class="modal_con">
+      <div class="modal_left">
+        <h3><strong>Hospital</strong> logo</h3>
+        <img class="overlay_img" id="overlay_img_1" src="./assets/modal_pics2.png" alt="">
+        <img class="overlay_img" id="overlay_img_2" src="./assets/modal_pics1.png" alt="">
+      </div>
+      <div class="modal_right">
+        <form action="">
+          <h5>Sign up For account</h5>
+          <div class="name">
+            <div class="first_name">
+              <label for="">First Name</label>
+              <input type="text" placeholder="Your First Name" required>
+            </div>
+            <div class="first_name">
+              <label for="">Last Name</label>
+              <input type="text" placeholder="Your Last Name" required>
+            </div>
+          </div>
+          <div class="email">
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter Your email Address" required>
+          </div>
+          <div class="name password">
+            <div class=" first_name first_pass">
+              <label for="">Password</label>
+              <input type="password" placeholder="Enter Password" required>
+            </div>
+            <div class="first_name confirm_pass">
+              <label for="">Confirm Password</label>
+              <input type="password" placeholder="Confirm Password" required>
+            </div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="" required>
+            <h6>I accept all <a href="">terms and condition</a> </h6>
+          </div>
+          <div class="submit_login">
+            <button type="submit">Sign Up</button>
+            <p>Already have an account ? <a href=""> Log in</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
